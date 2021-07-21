@@ -76,3 +76,7 @@ endif
 ifeq ($(CONFIG_I2C),y)
 CHIP_CSRCS += mpfs_i2c.c
 endif
+
+ifeq ($(CONFIG_MPFS_EMMCSD),y)
+CHIP_CSRCS += mpfs_emmcsd.c
+endif
